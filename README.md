@@ -13,3 +13,9 @@ Basic setup for modules 1-2:
 ```bash
 pip install tqdm notebook==7.1.2 openai elasticsearch pandas scikit-learn ipywidgets
 ```
+
+Basic setup for module 3:
+
+```bash
+pip install tqdm notebook==7.1.2 openai elasticsearch pandas scikit-learn ipywidgets sentence_transformers==2.7.0
+```
