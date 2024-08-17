@@ -163,3 +163,4 @@ cython_debug/
 
 # Others
 **/ollama_files/
+rag-project/
