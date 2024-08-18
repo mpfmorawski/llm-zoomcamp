@@ -12,7 +12,7 @@ def search(*args, **kwargs) -> List[Dict]:
     
     connection_string = kwargs.get('connection_string', 'http://localhost:9200')
     index_name = kwargs.get('index_name', 'documents')
-    top_k = kwargs.get('top_k', 1)
+    top_k = kwargs.get('top_k', 5)
 
     query = QUERY
 
@@ -38,13 +38,12 @@ def search(*args, **kwargs) -> List[Dict]:
     try:
         response = es_client.search(index=index_name, body=search_query)
 
-        # for hit in response['hits']['hits']:
-        #     print(hit["data"])
-        #     # print(data)
-        #     # print(f"score: {data['_score']}")
-        #     # print(f"document_id: {data['_source']['document_id']}")
-        #     # print(f"question: {data['_source']['question']}")
-        #     # print(f"text: {data['_source']['text']}")
+        for hit in response['hits']['hits']:
+            print(f"score: {hit['_score']}")
+            print(f"document_id: {hit['_source']['document_id']}")
+            print(f"question: {hit['_source']['question']}")
+            print(f"text: {hit['_source']['text']}")
+            print("---")
 
         return [hit for hit in response['hits']['hits']]
 
