@@ -50,7 +50,7 @@ To do that go to "New with options..." and change "Machine type" to "4-core - 16
 
 4. Add block as "Custom code".
 
-5. Go to "<> Edit" and copy & paste code from [homework-5/ingest-llm-faq-version-1.py](homework-5/ingest-llm-faq-version-1.py)
+5. Go to "<> Edit" and copy & paste code from [homework-5/ingest-llm-faq.py](ingest-llm-faq.py)
 
 6. Run block.
 
@@ -62,7 +62,7 @@ To do that go to "New with options..." and change "Machine type" to "4-core - 16
 
 2. Add block as "Custom code".
 
-3. Go to "<> Edit" and copy & paste code from [homework-5/chunking-llm-faq.py](homework-5/chunking-llm-faq.py)
+3. Go to "<> Edit" and copy & paste code from [homework-5/chunking-llm-faq.py](chunking-llm-faq.py)
 
 4. Run block.
 
@@ -86,10 +86,11 @@ To do that go to "New with options..." and change "Machine type" to "4-core - 16
 
 3. Edit code
 
-4. Go to "<> Edit" and copy & paste code from [homework-5/vector-database-llm-faq.py](homework-5/vector-database-llm-faq.py).
+4. Go to "<> Edit" and copy & paste code from [homework-5/vector-database-llm-faq.py](vector-database-llm-faq.py).
 
 5. Replace `YOUR_PIPELINE_NAME` with your pipeline name e.g. `transcendent_nexus` (replace the space with underscore `_`)
 
 6. Run block.
 
 7. Check the output.
+
