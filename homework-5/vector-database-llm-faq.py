@@ -15,7 +15,7 @@ def elasticsearch(
     Exports document data to an Elasticsearch database.
     """
 
-    connection_string = 'http://elasticsearch:9200'
+    connection_string = kwargs.get('connection_string', 'http://localhost:9200')
     
     from datetime import datetime
 
